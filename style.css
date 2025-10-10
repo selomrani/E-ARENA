@@ -538,63 +538,55 @@
             transition: var(--transition);
         }
 
+    
         #contact-form {
-            padding: 3rem 1rem;
-            background: #0f0f12;
+            padding: 4rem 2rem;
+            background: #12121c;
         }
 
-        .contact-content {
+        #contact-form .contact-content {
             max-width: 600px;
             margin: 0 auto;
             text-align: center;
-            color: #ffffff;
-            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
-        .contact-content h1 {
-            font-size: 2rem;
-            margin-bottom: 0.25rem;
+        #contact-form .contact-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
         }
 
-        .contact-content h2 {
-            font-size: 1rem;
-            color: #cfcfcf;
-            margin-top: 0.25rem;
-        }
-
-        form {
+        #contact-form form {
             margin-top: 1.25rem;
             display: flex;
             flex-direction: column;
             gap: 0.75rem;
         }
 
-        input[type="text"],
-        input[type="email"],
-        textarea {
+        #contact-form input,
+        #contact-form textarea {
             width: 100%;
             padding: 0.65rem 0.75rem;
             border-radius: 6px;
             border: 1px solid #272733;
             background: #14141a;
             color: #fff;
-            font-size: 0.95rem;
-            box-sizing: border-box;
         }
 
-        textarea {
+        #contact-form textarea {
             resize: vertical;
             min-height: 120px;
         }
 
-        input:focus,
-        textarea:focus {
+        #contact-form input:focus,
+        #contact-form textarea:focus {
             outline: none;
             border-color: #ff0080;
             box-shadow: 0 0 0 4px rgba(255, 0, 128, 0.06);
         }
 
-        button[type="submit"] {
+        #contact-form button[type="submit"] {
             padding: 0.7rem 1rem;
             border-radius: 6px;
             border: none;
@@ -605,12 +597,12 @@
             transition: transform 0.12s ease, opacity 0.12s ease;
         }
 
-        button[type="submit"]:hover {
+        #contact-form button[type="submit"]:hover {
             transform: translateY(-2px);
             opacity: 0.95;
         }
 
         @media (max-width: 480px) {
             .contact-content h1 { font-size: 1.6rem; }
-            form { gap: 0.6rem; }
+            #contact-form form { gap: 0.6rem; }
         }
